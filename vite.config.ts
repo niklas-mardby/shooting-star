@@ -5,13 +5,14 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig(({ mode }) => {
 	// Ladda miljövariabler från .env-fil baserat på mode (development/production)
 	const env = loadEnv(mode, process.cwd());
+	console.log(env);
 
 	return {
 		plugins: [react()],
 		server: {
 			proxy: {
 				"/api": {
-					target: `https://comicvine.gamespot.com/api/search/?api_key=${env.COMIC_API_KEY}&format=json&query=`,
+					target: `https://comicvine.gamespot.com/api/search/?api_key=${env.VITE_API_KEY}&format=json&query=`,
 					changeOrigin: true,
 					rewrite: (path) => path.replace(/^\/api/, ""),
 				},
