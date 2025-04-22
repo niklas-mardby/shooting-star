@@ -9,7 +9,7 @@ Vi tittar på ett API: https://mardby.se/w/index.php?title=Comic_Vine_API
 -  Forka repot
 -  Klona ner din fork
 -  Installera dependencies med exvis npm i
--  Skapa en fil .env med innehållet
+-  Skapa en fil .env i roten för årojektet, med innehållet
 
 ```
    VITE_API_KEY="din-nyckel-här"
