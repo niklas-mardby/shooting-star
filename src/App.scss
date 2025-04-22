@@ -1,0 +1,14 @@
+.CharacterCard {
+	border: 2px solid rgb(88, 37, 139);
+	-webkit-box-shadow: -1px -24px 55px -10px rgba(88, 37, 139, 0.75) inset;
+	-moz-box-shadow: -1px -24px 55px -10px rgba(88, 37, 139, 0.75) inset;
+	box-shadow: -1px -24px 55px -10px rgba(88, 37, 139, 0.75) inset;
+	border-radius: 15px;
+	padding: 1rem;
+	margin: 1rem;
+
+	img {
+		border-radius: 10px;
+		max-width: 50%;
+	}
+}
